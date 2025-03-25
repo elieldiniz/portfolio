@@ -1,20 +1,20 @@
-import { Tecnologia } from '@core';
-import { Injectable } from '@nestjs/common';
-import { PrismaProvider } from 'src/db/prisma.provider';
+import { Tecnologia } from "@core"
+import { Injectable } from "@nestjs/common"
+import { PrismaProvider } from "src/db/prisma.provider"
 
 @Injectable()
 export class TecnologiaProvider {
-  constructor(private readonly prisma: PrismaProvider) {}
+    constructor(private readonly prisma: PrismaProvider) {}
 
-  async obterTodas(): Promise<Tecnologia[]> {
-    return this.prisma.tecnologia.findMany();
-  }
+    async obterTodas(): Promise<Tecnologia[]> {
+        return this.prisma.tecnologia.findMany()
+    }
 
-  async obeterDestque(): Promise<Tecnologia[]> {
-    return this.prisma.tecnologia.findMany({
-      where: {
-        destaque: true,
-      },
-    });
-  }
+    async obeterDestque(): Promise<Tecnologia[]> {
+        return this.prisma.tecnologia.findMany({
+            where: {
+                destaque: true,
+            },
+        })
+    }
 }

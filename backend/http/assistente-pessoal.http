@@ -1,0 +1,7 @@
+POST  https://elieldiniz.app.n8n.cloud/webhook/assitente-pessoal
+Content-Type: application/json
+
+{
+    "chatId": "12345678",
+    "message": "Voce trabalha com react native"
+}

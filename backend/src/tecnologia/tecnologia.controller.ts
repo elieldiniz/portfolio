@@ -1,18 +1,18 @@
-import { Controller, Get } from '@nestjs/common';
-import { Tecnologia } from '@core';
-import { TecnologiaProvider } from './tecnologia.provider';
+import { Controller, Get } from "@nestjs/common"
+import { Tecnologia } from "@core"
+import { TecnologiaProvider } from "./tecnologia.provider"
 
-@Controller('tecnologias')
+@Controller("tecnologias")
 export class TecnologiaController {
-  constructor(private readonly repo: TecnologiaProvider) {}
+    constructor(private readonly repo: TecnologiaProvider) {}
 
-  @Get()
-  async obterTodos(): Promise<Tecnologia[]> {
-    return this.repo.obterTodas();
-  }
+    @Get()
+    async obterTodos(): Promise<Tecnologia[]> {
+        return this.repo.obterTodas()
+    }
 
-  @Get('destaques')
-  async obeterDestque(): Promise<Tecnologia[]> {
-    return this.repo.obeterDestque();
-  }
+    @Get("destaques")
+    async obeterDestque(): Promise<Tecnologia[]> {
+        return this.repo.obeterDestque()
+    }
 }
