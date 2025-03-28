@@ -1,4 +1,4 @@
-import BotãoChat from "../components/chat/BotaoChat"
+import BotãoChat from "../../components/chat/BotaoChat"
 export default function Layout(props: { children: React.ReactNode }) {
 	return (
 		<div>
