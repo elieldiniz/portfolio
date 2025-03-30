@@ -1,5 +1,5 @@
 
-import  Id  from "../lib/id"
+import  {Id} from "@core"
 import useLocalStorage from "./useLocalStorage"
 import Mensagem from "@/model/Mensagem"
 import conversar from "@/function/chat"
