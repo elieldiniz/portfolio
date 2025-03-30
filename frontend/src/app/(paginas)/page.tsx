@@ -7,7 +7,7 @@ export default async function Home() {
   const tecnologia = await obterTecnologias()
   return (
       <div> 
-        <Principal/>
+        <Principal tecnologias={tecnologia.destaques}/>
         <Curriculo tecnologias={tecnologia.todas}/>
       </div>
   );
