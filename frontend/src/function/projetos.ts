@@ -1,4 +1,4 @@
-import { Projeto, Tipo } from "@/core"
+import { Projeto, Tipo } from "../core/index"
 import { httpGet } from "./api"
 
 export async function obterProjetos() {

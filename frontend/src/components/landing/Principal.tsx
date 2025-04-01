@@ -1,4 +1,4 @@
-import { Tecnologia } from "@/core"
+import { Tecnologia } from "../../core/index"
 import Cabecalho from "../shared/Cabecalho"
 import Tecnologias from "../tecnologias/Tecnologias"
 

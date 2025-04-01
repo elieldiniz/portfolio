@@ -1,9 +1,10 @@
-import { Tecnologia } from "@/core"
+import { Tecnologia } from "../core/index"
 import { httpGet } from "./api"
+
 
 export async function obterTecnologias() {
 	const tecnologias: Tecnologia[] = await httpGet("/tecnologias")
-
+	
 	return {
 		todas: tecnologias,
 		get destaques() {
