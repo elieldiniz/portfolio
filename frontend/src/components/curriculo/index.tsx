@@ -1,4 +1,4 @@
-import { Tecnologia } from "../../core/index"
+import { Tecnologia } from "@/core"
 import TecnologiasTrabalhadas from "./TecnologiasTrabalhadas"
 import Experiencia from "./Experiencia"
 import MiniCV from "./MiniCV"
