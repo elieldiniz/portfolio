@@ -1,4 +1,4 @@
-import { Projeto } from "@core"
+import { Projeto } from "@/core"
 import ItemProjeto from "./ItemProjeto"
 import {
 	Carousel,
