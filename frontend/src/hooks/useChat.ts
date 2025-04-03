@@ -1,4 +1,4 @@
-import { Id } from "@core/shared"
+import  {Id} from "@core"
 import useLocalStorage from "./useLocalStorage"
 import Mensagem from "@/model/Mensagem"
 import conversar from "@/function/chat"
