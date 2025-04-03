@@ -1,4 +1,4 @@
-import { Tecnologia } from "../../core"
+import { Tecnologia } from "@/core"
 
 export interface TecnologiasTrabalhadasProps {
 	lista: Tecnologia[]
